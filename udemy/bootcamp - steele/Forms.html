@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+
+	<h1>Login</h1>
+
+	<form action="" method="" >
+	<!-- action - where the form sends data; default is current page -->
+	<!-- method - HTTP method (GET or POST); default is GET -->
+		<label>
+			Username: 
+			<input type="text" name="username" placeholder="username" required>
+		</label>
+		
+		<!-- for labels, can either put the input within the label tags (see above), OR have the input separate from the label tags but use "for" and "id" (see below) - using "for" and "id" is more typical?-->
+
+		<!-- 
+		<input type="color" name="">
+		<input type="radio" name=""> -->
+		
+		<label for="password">Password:</label>
+		
+		<input type="password" id="password" name="password" placeholder="password" required>
+				
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="email">
+		
+		<!-- two ways to have a submit button -->
+		<input type="Submit" name="">
+		
+		<!-- here's the other way: <button>Submit</button> -->
+
+		<!-- See MDN for more input options -->
+
+		<!-- Validations - some simple validations (required and data types (e.g., e-mail)) can be done with HTML; others require javascript or other backend coding -->
+
+	</form>
+	
+
+</body>
+</html>

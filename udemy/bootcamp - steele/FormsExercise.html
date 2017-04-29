@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+
+	<h1>Register</h1>
+
+	<form action="" method="" >
+	<!-- action - where the form sends data; default is current page -->
+	<!-- method - HTTP method (GET or POST); default is GET -->
+		<label>
+			First Name: 
+			<input type="text" name="firstname" placeholder="John" required>
+		</label>
+		
+		<!-- for labels, can either put the input within the label tags (see above), OR have the input separate from the label tags but use "for" and "id" (see below) - using "for" and "id" is more typical?-->
+
+		<!-- 
+		<input type="color" name="">
+		<input type="radio" name=""> -->
+		
+		<label for="lastname">Last Name:</label>
+		<input type="text" id="lastname" name="lastname" placeholder="Smith" required>
+		
+		<p>  <!-- could also use div instead of p-->
+		
+		<label for="male">Male</label>
+		<input type="radio" name="gender" id="male" value="male">
+
+		<label for="female">Female</label>
+		<input type="radio" name="gender" id="female" value="female">
+		
+		<label for="other">Other</label>
+		<input type="radio" name="gender" id="other" value="other">
+		</p>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="your email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" pattern=".{5,10}" title="5 to 10 characters" required>
+		 <!-- to validate length in HTML5, could also use minlength="5" maxlength="10", instead of pattern  -->
+		
+		<div>
+		<label>Birthday:
+			<select name="birthmonth" >
+				<option value="Month">Month</option>
+				<option value="January">January</option>
+				<option value="December">December</option>
+				<!-- For dropdowns, if value attribute is not used, then by default it will send the displayed text (e.g., "Red") -->
+			</select>
+			<select name="birthdate">
+				<option value="Day">Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</select>
+			<select name="birthyear">
+				<option value="Year">Year</option>
+				<option value="1989">1989</option>
+				<option value="2000">2000</option>
+			</select>
+		</label>
+		</div>
+
+		<label for="TOC">I agree to the terms and conditions</label>
+		<input type="checkbox" name="TOC" id="TOC" value="Yes" required>
+
+		<!-- two ways to have a submit button -->
+		<p>
+		<input type="Submit" name="submit">
+		</p>
+		<!-- here's the other way: <button>Submit</button> -->
+
+		<!-- See MDN for more input options -->
+
+		<!-- Validations - some simple validations (required and data types (e.g., e-mail)) can be done with HTML; others require javascript or other backend coding -->
+
+	</form>
+	
+
+</body>
+</html>

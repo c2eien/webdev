@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inputs</title>
+</head>
+<body>
+
+<p>Do you prefer cats or dogs?</p>
+
+<form>
+		<!-- RADIOS -->
+		<label for="dogs">Dogs:</label>
+		<input type="radio" name="petChoice" id="dogs" value="DOGS">
+		<!-- "value" is what is submitted in the form if this radio is selected. without a value attribute, the default is just "on" -->
+		<label for="cats">Cats</label>
+		<input type="radio" name="petChoice" id="cats" value="CATS">
+
+		<!-- DROPDOWN using the select and option tags -->
+		<div>
+		<label>What color?
+		<select name="color">
+			<option value="red">Red</option>
+			<option value="orange">Orange</option>
+			<option value="yellow">Yellow</option>
+				<!-- For dropdowns, if value attribute is not used, then by default it will send the displayed text (e.g., "Red") -->
+		</select>
+		</label>
+		</div>
+
+		<!-- TEXTAREA -->
+		<p>Why?</p>
+		<textarea name="paragraph" rows="10" cols="30"></textarea>
+
+		<!-- if you just need SHORT text answers, can use <input type="text"> -->
+
+		<button>Go!</button>
+		<!-- if a BUTTON is the last item in the form, it will SUBMIT the form -->
+</form>
+
+</body>
+</html>
