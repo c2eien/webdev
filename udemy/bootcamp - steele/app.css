@@ -1,11 +1,32 @@
-h1 {
-	color: red;
+body {
+	background: url(images/canvas.jpg); /*background image or color*/
+	background-repeat: no-repeat; /*i.e., won't tile */
+	background-size: cover; /*cover means takes up entire body, responsively*/
 }
 
-li {
-	color: green;
+h1 {
+	color: #3FB8AF; /*text color*/
+	border: 5px dashed purple;
+	/* alternatively, can specify the border properties separately
+
+	border-color: purple;
+	border-width: 5px;
+	border-style: solid;
+
+	borders always need at least color, width, and style, or they won't show*/
 }
 
 h4 {
-	color: blue;
+	color: rgb(127,199,175);
+	background: rgb(200, 150, 100); /*background image or color*/
 }
+
+/*rgb values range from 0 to 255*/
+/*to make transparent, can use RGBA:  rgba(127, 199, 175, 0.1)  ; 
+ranges from 0.0 to 1.0 where 0 is most transparent*/
+
+li {
+	color: #FF3D7F;
+}
+
+

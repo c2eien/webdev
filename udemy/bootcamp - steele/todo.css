@@ -1,0 +1,21 @@
+body {
+	background: orange;
+}
+
+li {
+	border: 2px solid red;
+}
+
+#lastcheck {
+	background-color: yellow;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+/*selectors:
+- element: e.g., div, span, p, li, h1
+- ID: ONLY ONE PER PAGE e.g., #special, #thisid
+- class: like ID but can affect  MULTIPLE ELEMENTS;
+*/
