@@ -10,6 +10,8 @@ li {
 	background-color: yellow;
 }
 
+/*FYI - can't do check value in CSS*/
+
 .completed {
 	text-decoration: line-through;
 }
@@ -19,3 +21,4 @@ li {
 - ID: ONLY ONE PER PAGE e.g., #special, #thisid
 - class: like ID but can affect  MULTIPLE ELEMENTS;
 */
+
