@@ -1,0 +1,33 @@
+h1 {
+	text-align: center;
+}
+
+table {
+	margin: auto; /*centers the table, dynamically
+/*	border: 1px solid red;
+*/}
+
+td {
+	width: 100px;
+/*	padding: 50px 0;*/
+	height: 100px;
+}
+
+.middle td { /*could also call .middle using tr:nth-of-type(2) selector*/
+	border-top: 2px solid blue;
+	border-bottom: 2px solid blue;
+
+}
+
+.center {
+	border-left: 2px solid blue;
+	border-right: 2px solid blue;
+}
+
+/*tr.middle {
+	border: 2px solid blue;
+}
+need a workaround to style borders directly on tr
+https://stackoverflow.com/questions/20872200/giving-a-border-to-an-html-table-row-tr
+*/
+

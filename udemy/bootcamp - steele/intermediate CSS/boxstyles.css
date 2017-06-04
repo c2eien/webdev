@@ -1,0 +1,27 @@
+/*BOX MODEL
+- CONTENT
+- PADDING - between content and border
+- BORDER
+- MARGIN - around outside of border
+*/
+
+p{
+	/*content*/
+	width: 50%; /*can use pixels, percentages (relative to body - responsive to window),...*/
+
+	/*border*/
+	border: 2px solid blue;
+
+	/*padding*/
+	/*padding: 10px;*/
+	padding-left: 40px;
+
+	/*margin*/
+	/*margin: 100px;*/
+	/*margin-top: 20px;*/
+	/*margin: 20px 40px 500px 100px; */
+	/*top right bottom left; can use pixels, em, percentages, auto (centers)...*/
+	margin:0 auto;
+	/*top and bottom, left and right*/
+
+}

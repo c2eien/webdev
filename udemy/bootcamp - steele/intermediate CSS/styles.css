@@ -1,0 +1,34 @@
+/*Can see www.cssfontstack.com for websafe fonts and font stacks*/
+/*also, for FREE CUSTOM FONTS, can use GOOGLE FONTS*/
+
+p {
+	/*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
+	/*font-size: 1.0em;*/
+}
+
+span {
+	font-size: 2.0em ;/*doubles relative to parent element; default base is typically 16 px*/
+	font-family: 'Oswald', sans-serif; /*from Google Fonts; gotten with link tag in html page*/
+}
+
+p:nth-of-type(2) {
+	
+	line-height: 2; /*vertical spacing between lines; 2 would be like double=spacing. 
+	can also specify exact pixels*/
+	text-align: right;
+	text-decoration: underline; /*can do underline, overline, line-through, and more.*/
+	font-family: 'Slabo 27px', serif; /*from Google Fonts; gotten with link tag in html page*/
+	font-weight: bold; /*thickness of letters; could also use a number*/
+
+}
+
+h1 {
+	/*font-family: Georgia, Times, "Times New Roman", serif;*/
+	font-family: 'Vibur', cursive; /*from Google Fonts; gotten with link tag in html page*/
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500; 		/*thickness of letters*/
+	line-height: 26.4px;
+}
+

@@ -1,0 +1,51 @@
+
+
+/*"float" takes things out of "normal flow" of document. 
+allows normally separate-line elements to be on same line; 
+also allows default spacings to disappear */
+
+p {
+	/*position: relative;
+	right: 0px;
+	top: 0px;*/
+	font-family: 'Anaheim', sans-serif; /* google font, see the html link tag */
+	/*font-size: 30px;*/
+	font-size: 4vw; /* vw ("viewport width") allows setting font size relative to window size*/
+	text-align: right;
+	margin-right: 1.666%;
+	font-weight: 400;
+	margin-top:10px;
+	margin-bottom: 5px;
+}
+
+#line {
+	float: right;
+	margin-right: 1.666%;
+	border-bottom: 1px solid #D1D1E1;
+	width: 30%;
+	margin-bottom: 0px;
+}
+
+div.image {
+	width: 30%; /* %relative to window - responsive*/
+	padding-top: 30%; /*relative to window WIDTH; workaround to get the "height" of the element to be same as width
+	https://stackoverflow.com/questions/21537806/css-height-same-as-width*/
+	background-position: 50% 50%; /*centers the image in the div element*/
+	background-repeat: no-repeat; 
+	background-size: 200%; /*can use this to adjust the image size, relative to div element*/
+	float: left; /*allows default spacings between elements to disappear*/
+	margin: 1.666%; /*relative to window width*/
+	/*each image is 30%, making 90% total, 
+	plus 1.66% times 6 for the margins, 
+	which equals 99.96%" (nearly 100%).*/
+
+}
+/*using div instead of img tag as workaround to use non-square images; 
+https://stackoverflow.com/questions/15167545/how-to-crop-a-rectangular-image-into-a-square-with-css
+*/
+
+
+/*img {
+	width: 30%;
+	float: left;
+}*/
