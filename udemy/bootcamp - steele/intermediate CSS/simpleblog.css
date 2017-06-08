@@ -1,0 +1,55 @@
+body {
+	background-color: #DA7F2A;
+	color: #FFFFFF;
+	font-family: 'Droid Sans', sans-serif;
+	width: 80%; /*responsive width*/
+	max-width: 700px; /*width will only be responsive up to 700px*/
+	/*margin: 10px 100px 10px 100px;*/
+	margin: 20px auto; /* 20px margin for top/bottom; centered (responsive) for left-right*/
+	border: 30px solid #63A1BE;
+	padding: 20px;
+}
+
+.post {
+	margin: 25px 0 25px 0;
+}
+
+h2 {
+	font-size: 30px;
+	color: #F2F0F0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.date {
+	color: #C15D1F;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem; /*rem is proportional to "root" font size */
+
+}
+
+h2 + p {
+	border-left: 10px solid #63A1BE;
+	padding-left: 10px;
+/*	color: yellow;*/
+}
+
+.quote {
+	border-left: 10px solid #63A1BE;
+	padding-left: 10px;
+}
+
+hr {
+	border-top: 1px dotted #8c8b8b;
+	border-bottom: 1px dotted #fff;
+}
+
+/*
+ gray border
+colors - border, date, h2
+font 
+blockquote - turn on left border
+alignment on left
+date in all caps (CSS)
+date has some letter spacing
+<hr> horiz rule  with styles */
