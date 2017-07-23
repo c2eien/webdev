@@ -6,17 +6,52 @@
 
 <!-- 	could also use hosted bootstrap css
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<!-- can also "override"/supplement styles by editing the css or referencing another css (external or embedded) -->
 
 </head>
 <body>
-	<h1>Bootstrap Basics</h1>
+	
+	<div class="container">
+
+
+ 	<div class="jumbotron">
+ 		<h1> I Am JumboTron </h1>
+ 		<p> Hey there, I'm a jumbotron. Have fun! Don't hurt yourself. Woot woot woot.</p>
+ 		<button class="btn btn-success btn-lg">CLICK ME</button>
+ 	</div>
+
+ 	<p>
+ 	<h1>Bootstrap Basics</h1>
 	<button class="btn btn-success btn-xs">CLICK ME</button>
 	<button class="btn btn-success btn-xs">CLICK ME</button>
 	<button class="btn btn-success btn-xs active">CLICK ME</button>
 	<button class="btn btn-success btn-xs" disabled="disabled">CLICK ME</button>
 
 	<a href="http://www.getbootstrap.com" class="btn btn-info btn-lg">Bootstrap Docs</a>
+	</p>
 
+	<form>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Email address</label>
+	    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputFile">File input</label>
+	    <input type="file" id="exampleInputFile">
+	    <p class="help-block">Example block-level help text here.</p>
+	  </div>
+	  <div class="checkbox">
+	    <label>
+	      <input type="checkbox"> Check me out
+	    </label>
+	  </div>
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+ 	</div>
 
 </body>
 </html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+
+	<!-- adding embedded style with class .pink just to make grid system visible -->
+	<style type="text/css">
+		.pink {
+			background: pink;
+			border: 1px solid purple;
+		}
+		.orange {
+			background: orange;
+			border: 1px dashed grey;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+
+
+<!-- http://getbootstrap.com/css/#grid -->
+<!-- Purpose: Simple way to add (responsive) structure and layout -->
+<!-- e.g., things can go from horizontal layout to vertical layout depending on size of view -->
+
+<!-- ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+<!-- ___ IMPORTANT: column-wise, everything is out of __12__ units total ___ -->
+
+<!-- 								 __12__									 -->
+
+<!-- ___ IMPORTANT: column-wise, everything is out of __12__ units total ___ -->
+<!-- ....................................................................... -->
+
+<!-- RESPONSIVENESS: There are 4 different "view sizes"/layouts: -->
+<!-- ..............  	"xs" (mobile) , "sm" (tablet), "md", "lg"-->
+<!-- 															 -->
+
+<!-- Specify the size of an element (e.g., div) with class -->
+<!-- e.g.: class="col-lg-3 col-sm-6" , meaning it will take up 3 column units at the lg view, and 6 column units at the sm view.-->
+<!-- If a size is not specified for a certain view, then the element will take the size for the next smaller view specified (e.g., if no lg view size is specified, then it will use the specification for the md view); if none exists, then element will default to taking up a whole row (essentailly taking up all 12 units). -->
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div> <!-- referring to both the bootstrap column class and the embedded .pink class -->
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		</div>		
+		<div class="row">
+			 <div class="col-lg-2 pink">bCOL LG 2</div> <!-- referring to both the bootstrap column class and the embedded .pink class -->
+			 <div class="col-lg-8 pink">bCOL LG 8</div>
+			 <div class="col-lg-2 pink">bCOL LG 2</div>
+		</div>
+		<p>
+		<div class="row">
+			 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">TOURDATE <h3>A</h3></div>
+			 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">TOURDATE <h3>B</h3></div>
+			 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">TOURDATE <h3>C</h3></div>
+			 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">TOURDATE <h3>D</h3></div>
+		</div>
+		</p>
+		<!-- Note: since the lg and md view specifications are the same, we do not need to specify the lg (it will automatically take on the md). Also, we do not need to specify the col-xs-12, since it will default to 12 (whole row) when no xs size is specified.  So the code below results in the same effect. -->
+
+		<p>
+		<div class="row">
+			 <div class="col-md-3 col-sm-6 pink">TOURDATE <h3>A</h3></div>
+			 <div class="col-md-3 col-sm-6 pink">TOURDATE <h3>B</h3></div>
+			 <div class="col-md-3 col-sm-6 pink">TOURDATE <h3>C</h3></div>
+			 <div class="col-md-3 col-sm-6 pink">TOURDATE <h3>D</h3></div>
+		</div>
+		</p>
+
+		<!--  		-->
+		<!-- NESTING -->
+		<!--  		-->
+		<p>
+		<div class="row">
+			 <div class="col-md-3 col-sm-6 pink">
+			 	<div class="row">
+			 		<div class="col-lg-6 orange"> NESTED first HALF</div>
+					<div class="col-lg-6 orange"> NESTED other HALF</div>
+			 	</div>
+			 </div> 
+			 <div class="col-md-3 col-sm-6 pink">TOURDATE <h3>B</h3></div>
+			 <div class="col-md-3 col-sm-6 pink">TOURDATE <h3>C</h3></div>
+			 <div class="col-md-3 col-sm-6 pink">
+			 	<div class="row">
+			 		<div class="col-sm-2 orange"> NESTED </div>
+					<div class="col-sm-2 orange"> NESTED </div>
+					<div class="col-sm-2 orange"> NESTED </div>
+					<div class="col-sm-2 orange"> NESTED </div>
+					<div class="col-sm-2 orange"> NESTED </div>
+					<div class="col-sm-2 orange"> NESTED </div>
+			 	</div>
+			 </div>
+		</div>
+		</p>
+
+	</div>
+
+</body>
+</html>

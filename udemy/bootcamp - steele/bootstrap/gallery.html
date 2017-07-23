@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+	
+	<!-- adding own style sheet for extra customization (e.g., overwrite bootstrap styles)-->
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+
+	<!-- font awesome (more glyphicons) -->
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<!-- NOTE: for glyphicons (from bootstrap or fontawesome), you treat them like fonts/text when changing size or color in css -->
+
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<!-- Note: You want the .container INSIDE the navbar as opposed to outside. If the  .container was on the outside, then it would not go across the whole page-->
+		<div class="container"> 
+		<div class="navbar-header">
+
+			<!-- hamburger buttom for collapse -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-MATCH" aria-expanded="false">
+			<!-- note the "data-target" need to match with the "id" of the content group being collapsed -->
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	     	</button>
+	      <a class="navbar-brand" href="#">
+			<i  class="fa fa-camera-retro" aria-hidden="true"></i>
+	      </a>
+		</div>
+		
+		<!-- collecting the collapsible stuff -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-MATCH">
+		<ul class="nav navbar-nav">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">Login</a></li>
+		</ul>
+		</div>
+
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> The Image Gallery</h1>
+			<p>woohoo learning how to make an image gallery with bootstrap</p>
+		</div>	
+
+
+		<div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">	<!-- to resize the image to grid size-->
+					<div class="image" style="background-image: url(https://source.unsplash.com/Z95viY3WaZs);"></div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<div class="image" style="background-image: url(https://source.unsplash.com/SRWpQRSdjQc);"></div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<div class="image" style="background-image: url(https://source.unsplash.com/Yt2kmYh_ilw);"></div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">	<!-- to resize the image to grid size-->
+					<div class="image" style="background-image: url(https://source.unsplash.com/dgLp5y_Jhuw);"></div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<div class="image" style="background-image: url(https://source.unsplash.com/B7RXV47aYTc);"></div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<div class="image" style="background-image: url(https://source.unsplash.com/3pzrAAEocSU);"></div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">	<!-- to resize the image to grid size-->
+					<div class="image" style="background-image: url(https://source.unsplash.com/U-8pVp66LOQ);"></div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<div class="image" style="background-image: url(https://source.unsplash.com/z6IyHYU0uF8);"></div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<div class="image" style="background-image: url(https://source.unsplash.com/Zhc14S-TKSg);"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+<!-- The link to javascript to make some of the bootstrap features work -->
+
+<!--  need the jquery cdn . NOTE: this needs to come before the bootstrap javascript link-->
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<!-- Using the bootstrap cdn as opposed to the downloaded file, for now -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<!-- In the next lecture, titled "Bootstrap Image Gallery Pt. 1", Colt will show you how to get hi-resolution stock images from a website called unsplash. 
+
+The method of getting the image url has changed since this video was created. 
+
+If you find an image you like then you'll need to click on the image to make it full screen at which point the url will change to give you the photo's ID. 
+It's the alphanumeric combination that comes after ?photo=.
+
+Once you copy the photo's ID then you can add it to the source.unsplash address like so: 
+
+<img src="https://source.unsplash.com/cPF2nlWcMY4"> 
+
+
+
+Additionally, students have reported having trouble with the grid when using images of varying sizes. See below for a few solutions:
+
+If you don't mind the images being of varying heights, but want to get rid of the white space bug then see here (https://www.udemy.com/the-web-developer-bootcamp/learn/v4/questions/1989586)
+If you're looking for Pinterest-like presentation of thumbnails of varying heights and/or widths, you'll need to use a third-party plugin such as Masonry, Isotope, or Salvattore.
+If you want to crop all of the images to the same size then see an example of this here (https://codepen.io/nax3t/pen/MJwpdb) -->
